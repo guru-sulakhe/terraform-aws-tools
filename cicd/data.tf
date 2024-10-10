@@ -27,7 +27,7 @@ data "aws_ami" "nexus_ami_info" {
 
     filter {
         name   = "name"
-        values = ["RHEL-9-DevOps-Practice"]
+        values = ["redhat-nexus-*"]
     }
 
     filter {
