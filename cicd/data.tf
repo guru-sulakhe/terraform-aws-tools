@@ -23,11 +23,11 @@ data "aws_ami" "ami_info" {
 data "aws_ami" "nexus_ami_info" {
 
     most_recent = true
-    owners = ["679593333241"]
+    owners = ["852699756283"]
 
     filter {
         name   = "name"
-        values = ["SolveDevOps-Nexus-Server-Ubuntu20.04-20240511-*"]
+        values = ["RHEL-9-DevOps-Practice"]
     }
 
     filter {
