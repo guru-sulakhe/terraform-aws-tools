@@ -6,8 +6,8 @@ terraform {
     }
   }
   backend "s3" {
-    bucket = "guru97s-remote-state"
-    key    = "terraform-expense-tools"
+    bucket = "guru97s-remote-state-infra"
+    key    = "terraform-expense-tools-aws"
     region = "us-east-1"
     dynamodb_table = "guru97s-locking-dynamodb"
   }
