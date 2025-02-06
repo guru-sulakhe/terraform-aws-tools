@@ -29,7 +29,7 @@ module "jenkins_agent" {
   }
 }
 
-resource "aws_key_pair" "tools" {
+resource "aws_key_pair" "tools" { #this key pair is used in the creation of nexus(ec2)
   key_name   = "tools"
   # you can paste the public key directly like this
   #public_key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIL6ONJth+DzeXbU3oGATxjVmoRjPepdl7sBuPzzQT2Nc sivak@BOOK-I6CR3LQ85Q"
